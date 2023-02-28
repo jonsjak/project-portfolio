@@ -1,0 +1,86 @@
+/* General styling */
+*{
+    box-sizing: border-box;
+}
+
+h1{
+position: absolute;
+width: 177px;
+height: 108px;
+left: 99px;
+top: calc(50% - 108px/2 - 131px);
+
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 700;
+font-size: 80px;
+line-height: 108px;
+/* identical to box height */
+
+
+color: #0B24F5;
+}
+
+h2{
+    font-family: 'Satoshi', sans-serif;
+}
+
+p{
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28.71px;
+}
+
+h4{
+width: 188px;
+height: 38px;
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 38px;
+color: #0B24F5;
+display: inline;
+;
+}
+
+h3{
+width: 303px;
+height: 43px;
+
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 900;
+font-size: 32px;
+line-height: 43px;
+
+color: #000000;
+
+
+/* Inside auto layout - WHAT???? */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+
+/* Mobile styling */
+@media (max-width:667){
+    body{
+    position: relative;
+    width: 375px;
+    height: 14532px; 
+    background: #FFFFFF;
+    }
+}
+
+/* Tablet styling */
+@media (min-width: 668px && max-width: 1024){
+    body{
+
+    }
+}
+
+/* Desktop styling */
