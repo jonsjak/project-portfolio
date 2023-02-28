@@ -3,6 +3,9 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0 24px;
+}
 h1{
 position: absolute;
 width: 177px;
@@ -56,13 +59,16 @@ font-size: 32px;
 line-height: 43px;
 
 color: #000000;
-
-
 /* Inside auto layout - WHAT???? */
 
 flex: none;
 order: 1;
 flex-grow: 0;
+}
+
+.profileImage{
+    margin: 55px 105.5px;
+    border-radius: 50%;
 }
 
 
