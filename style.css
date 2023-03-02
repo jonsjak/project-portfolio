@@ -61,11 +61,18 @@ body{
 
 .featureSec{
     background-color: #F5F5F5;
-
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+    padding-top: 64px;
 }
 
-.myWords{
-    background-color:  #FCEDEA;;
+.myWordsSec{
+    background-color:  #FCEDEA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .skillSec{
@@ -96,6 +103,10 @@ width: 19px;
 height: 30px;
 left: 78px;
 top: 67px;
+}
+
+.placeholderPic{
+    margin-bottom: 24px;
 }
 
 
@@ -135,6 +146,7 @@ h3{
     font-size: 32px;
     line-height: 43px;
     color: #000000;
+    margin-bottom: 18px;
     }
 
 p{
@@ -192,8 +204,117 @@ font-weight: 700;
 font-size: 72px;
 line-height: 80px;
 margin-bottom: 64px;
+text-align: left;
 }
 
 .myWordsHeader{
     color: #EB5577;
+    width: 325px;
+    height: 97px;
+    left: calc(50% - 325px/2 - 1px);
+    top: calc(50% - 97px/2 - 1957.5px);
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 97px;
+    margin: 64px 0;
+}
+
+.date{
+    width: 327px;
+    height: 27px;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 27px;
+    color: #EB5577;
+}
+
+
+.featureChild{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.tags{
+    display: inline;
+}
+    
+.tags > * {
+height: 22px;
+font-family: 'Satoshi';
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+color: #FFFFFF;
+background-color: #000000;
+display: inline;
+padding: 4px;
+margin-top: 20px;
+}
+
+/*Buttons*/
+.github-button{
+    width: 200px;
+    height: 48px;
+    background: #EB5577;
+    border-radius: 40px;
+    font-family: 'Satoshi';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.live-demo{
+    width: 164px;
+    height: 48px;
+    width: 164px;
+    height: 48px;
+    background: #0B24F5;
+    border-radius: 40px;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+
+}
+
+.globe{
+    width: 31px;
+    height: 31px;
+    margin: 0 15px 0 0;
+}
+
+.github{
+    width: 32px;
+    height: 32px;
+    margin: 0 15px 0 0;
+}
+
+
+
+.article-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 16px 0px 0px;
+    gap: 7px;
+    width: 178px;
+    height: 48px;
+    border-radius: 40px;
+}
+
+.article-img{
+    width: 20px;
+    height: 26px;
 }
