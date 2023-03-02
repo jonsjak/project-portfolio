@@ -22,7 +22,7 @@ body{
 .main-container > *{
     width: 100%;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 20px;
 }
 
 /*Section styling */
@@ -72,8 +72,8 @@ body{
 
 .myWordsSec{
     background-color:  #FCEDEA;
-    
-    border: 3px black solid;
+    display: flex;
+    flex-direction: column;
 }
 
 .skillSec{
@@ -94,8 +94,6 @@ body{
 
 .article{
     margin-bottom: 98px;
-    border: 5px black solid;
-    align-items: left;
 }
 
 /*Single elements*/
@@ -159,7 +157,7 @@ h3{
     font-size: 32px;
     line-height: 43px;
     color: #000000;
-    margin-bottom: 18px;
+   
     }
 
 .skillSec > h5{
@@ -239,6 +237,10 @@ text-align: left;
     text-align: center;
 }
 
+.newsHeader{
+margin-bottom: 18px;
+}
+
 .date{
     width: 327px;
     height: 27px;
@@ -288,9 +290,7 @@ margin-top: 20px;
     color: #FFFFFF;
     display: flex;
     align-items: center;
-
 }
-
 
 .live-demo{
     width: 164px;
@@ -337,9 +337,10 @@ margin-top: 20px;
     color: #333333;
     gap: 21px;
     justify-content: space-around;
+    margin-top: 18px;
 }
 
-.article-img{
+.article-icon{
     width: 20px;
     height: 26px;
     margin-left: 4px;
