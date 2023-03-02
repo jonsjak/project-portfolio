@@ -15,6 +15,8 @@ body{
 .main-container{
     width: 100%;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .main-container > *{
@@ -70,19 +72,31 @@ body{
 
 .myWordsSec{
     background-color:  #FCEDEA;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
+    border: 3px black solid;
 }
 
 .skillSec{
     background-color:  #FDF2E4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .timeToTalk{
-    background-color:  #F5F5F5;;
+    background-color:  #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 97px;
 }
 
+.article{
+    margin-bottom: 98px;
+    border: 5px black solid;
+    align-items: left;
+}
 
 /*Single elements*/
 .profileImage{
@@ -90,8 +104,11 @@ body{
     height: 164px;
     border-radius: 50%;
     display: block;
-    margin: 55px auto 29px;
-     
+    margin: 55px auto 29px;   
+}
+
+.profileImage2{
+    margin: 56px 0 29px 0;
 }
 
 .logo{
@@ -112,7 +129,6 @@ top: 67px;
 
 /*Headings*/
 h1{
-    width: 188px;
     height: 38px;
     font-family: 'Satoshi';
     font-style: normal;
@@ -124,17 +140,14 @@ h1{
     }
 
 h2{
-width: 177px;
 height: 108px;
 left: 99px;
-top: calc(50% - 108px/2 - 131px);
 font-family: 'Satoshi';
 font-style: normal;
 font-weight: 700;
 font-size: 80px;
 line-height: 108px;
 color: #0B24F5;
-text-align: center;
 }
 
 h3{
@@ -149,14 +162,23 @@ h3{
     margin-bottom: 18px;
     }
 
+.skillSec > h5{
+    height: 32px;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    padding: 2px;
+}
+
 p{
     font-family: 'EB Garamond', serif;
     font-weight: 400;
     font-size: 22px;
     line-height: 28.71px;
 }
-
-
 
 
 .scrollTxt{
@@ -172,7 +194,6 @@ p{
 }
 
 h4{
-    width: 189px;
     height: 32px;
     font-family: 'Satoshi';
     font-style: normal;
@@ -209,14 +230,13 @@ text-align: left;
 
 .myWordsHeader{
     color: #EB5577;
-    width: 325px;
     height: 97px;
     left: calc(50% - 325px/2 - 1px);
     top: calc(50% - 97px/2 - 1957.5px);
     font-weight: 700;
     font-size: 72px;
     line-height: 97px;
-    margin: 64px 0;
+    text-align: center;
 }
 
 .date{
@@ -226,6 +246,7 @@ text-align: left;
     font-size: 20px;
     line-height: 27px;
     color: #EB5577;
+    margin: 40px 0 4px;
 }
 
 
@@ -307,14 +328,86 @@ margin-top: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px 16px 0px 0px;
-    gap: 7px;
     width: 178px;
     height: 48px;
     border-radius: 40px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #333333;
+    gap: 21px;
+    justify-content: space-around;
 }
 
 .article-img{
     width: 20px;
     height: 26px;
+    margin-left: 4px;
+}
+
+
+.codeHead{
+background-color: #EB5577;
+}
+
+.toolbox{
+    background-color:#2483E0;
+}
+
+.more{
+    background-color: #0B24F5;
+    ;
+
+}
+
+.upcoming{
+    background-color: #6DB486;
+}
+
+ul{
+    width: 168px;
+height: 192px;
+
+font-family: 'EB Garamond';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 32px;
+margin: 18px 0 68px;
+}
+
+
+.skillHeader{
+    margin: 64px 0 66px;
+}
+
+.talkHeader{
+height: 78px;
+font-weight: 900;
+font-size: 58px;
+line-height: 78px;
+color: #EB5577;
+margin: 64px 0 0 0;
+}
+
+.phone{
+height: 32px;
+left: 24px;
+top: 560px;
+font-weight: 900;
+font-size: 24px;
+line-height: 32px;
+
+color: #000000;
+}
+
+.mail{
+height: 32px;
+left: 24px;
+top: 603px;
+font-weight: 900;
+font-size: 24px;
+line-height: 32px;
+color: #000000;
+margin-bottom: 103px;
 }
