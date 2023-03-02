@@ -1,13 +1,176 @@
 /* General styling */
 *{
-    box-sizing: border-box;
+    box-sizing: border-box;  
 }
 
-body {
-    margin: 0 24px;
+body{
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.main-container{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.main-container > *{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/*Section styling */
+.portfolio-header{
+ margin-bottom: 98px;
+}
+
+.presentation {
+    margin-bottom: 52px;
+}
+
+.soMe{
+    display: flex;
+    justify-content: space-around;
+}
+
+.letsScroll{
+    margin-top: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;   
+}
+
+.techSec{
+    background-color:  #EDFFFF;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.techTxt{
+    margin: 62px 0 120px;
+}
+
+.featureSec{
+    background-color: #F5F5F5;
+
+}
+
+.myWords{
+    background-color:  #FCEDEA;;
+}
+
+.skillSec{
+    background-color:  #FDF2E4;
+}
+
+.timeToTalk{
+    background-color:  #F5F5F5;;
+}
+
+
+/*Single elements*/
+.profileImage{
+    width: 164px;
+    height: 164px;
+    border-radius: 50%;
+    display: block;
+    margin: 55px auto 29px;
+     
+}
+
+.logo{
+    display: none;
+}
+
+.arrow{
+width: 19px;
+height: 30px;
+left: 78px;
+top: 67px;
+}
+
+
+/*Headings*/
 h1{
-position: absolute;
+    width: 188px;
+    height: 38px;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    color: #0B24F5;
+    display: inline;
+    }
+
+h2{
+width: 177px;
+height: 108px;
+left: 99px;
+top: calc(50% - 108px/2 - 131px);
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 700;
+font-size: 80px;
+line-height: 108px;
+color: #0B24F5;
+text-align: center;
+}
+
+h3{
+    width: 303px;
+    height: 43px;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 43px;
+    color: #000000;
+    }
+
+p{
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28.71px;
+}
+
+
+
+
+.scrollTxt{
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 22px;
+    color:#0B24F5;
+    width: 78px;
+    display: inline-block;
+    border-bottom: 3px solid #0B24F5;
+}
+
+h4{
+    width: 189px;
+    height: 32px;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #565656;
+}
+
+.techHeader{
 width: 177px;
 height: 108px;
 left: 99px;
@@ -18,75 +181,19 @@ font-style: normal;
 font-weight: 700;
 font-size: 80px;
 line-height: 108px;
-/* identical to box height */
-
-
-color: #0B24F5;
 }
 
-h2{
-    font-family: 'Satoshi', sans-serif;
-}
-
-p{
-    font-family: 'EB Garamond', serif;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 28.71px;
-}
-
-h4{
-width: 188px;
-height: 38px;
-font-family: 'Satoshi';
-font-style: normal;
+.featureHeader{
+width: 327px;
+height: 160px;
+left: calc(50% - 327px/2);
+top: 1554px;
 font-weight: 700;
-font-size: 28px;
-line-height: 38px;
-color: #0B24F5;
-display: inline;
-;
+font-size: 72px;
+line-height: 80px;
+margin-bottom: 64px;
 }
 
-h3{
-width: 303px;
-height: 43px;
-
-font-family: 'Satoshi';
-font-style: normal;
-font-weight: 900;
-font-size: 32px;
-line-height: 43px;
-
-color: #000000;
-/* Inside auto layout - WHAT???? */
-
-flex: none;
-order: 1;
-flex-grow: 0;
+.myWordsHeader{
+    color: #EB5577;
 }
-
-.profileImage{
-    margin: 55px 105.5px;
-    border-radius: 50%;
-}
-
-
-/* Mobile styling */
-@media (max-width:667){
-    body{
-    position: relative;
-    width: 375px;
-    height: 14532px; 
-    background: #FFFFFF;
-    }
-}
-
-/* Tablet styling */
-@media (min-width: 668px && max-width: 1024){
-    body{
-
-    }
-}
-
-/* Desktop styling */
