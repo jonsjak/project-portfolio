@@ -14,7 +14,7 @@ body{
 }
 
 /*Section styling */
-.presentationSec{
+.presentation-container{
  margin-bottom: 98px;
  padding: 0 24px;
 }
@@ -300,6 +300,12 @@ margin-top: 20px;
 
 }
 
+/* Logos */
+.linkedIn-logo, .github-logo, .stackoverflow-logo{
+    width: 21px;
+    height: 21px;
+}
+
 .globe{
     width: 31px;
     height: 31px;
@@ -414,7 +420,7 @@ margin-bottom: 103px;
         margin-bottom: 71px;
     }
 
-    .presentationSec{
+    .presentation-container{
         padding: 0 102px 0 102px;
         margin-bottom: 20px;
     }
@@ -503,5 +509,31 @@ margin-bottom: 103px;
 
 
   @media (min-width: 1024px){
+    /* header and presentation */
+    .presentationSec{
+        display: flex;
+        flex-direction: row-reverse;
 
+    }
+    .hero{
+        display: inline-block;
+        width: 50%;
+        height: 980px;
+    }
+
+    .presentation-container{
+        width: 50%;
+        display: inline;
+        padding-top: 252px;        ;
+    }
+
+    .profileImage{
+        display: inline-block;
+        margin: 0 50px -20px 0;
+    }
+
+    .presentation{display: inline-block;}
+
+    
+    
   }
