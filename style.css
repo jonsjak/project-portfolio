@@ -417,6 +417,10 @@ color: #000000;
 margin-bottom: 103px;
 }
 
+.presentationTxt{
+    margin-bottom: 52px;
+}
+
 @media (min-width: 668px) and (max-width: 1024px) {
     .hero{
         display: block;
@@ -499,13 +503,10 @@ margin-bottom: 103px;
         padding: 120px 89px 149px 89px;
     }
 
-
-    /* 
-    Set rule for all images
-    .myWordsSec > img{
+    .article{
         width: 564px;
-        height: 340px;
-    } */
+    }
+
 
     .myWordsHeader{
         text-align: left;
@@ -601,11 +602,10 @@ margin-bottom: 103px;
         justify-content: space-around;
         width: 820px;
         height: 280px;
-        border: 3px black dotted;
     }
 
     .placeholderPic{
-        border: 4px red solid;
+        border: 2px black dotted;
         width: 280px;
         height: 280px;
     }
@@ -616,11 +616,12 @@ margin-bottom: 103px;
     .live-demo{
         display: inline;}
 
-        /* My words sectoion */
+        /* My words section */
     .myWordsSec{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding: 0 82px;
+        padding: 120px 143px 0 143px;
+        gap: 32px;
     }
 
     .myWordsHeader{
@@ -630,13 +631,44 @@ margin-bottom: 103px;
     }
 
     .myWordsImg{
-        width:340px;
+        width:564px;
+    }
+
+    .article{
+
+        width: 564px;
     }
 
     /* Skills section */
-    .skillSec{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+    .skillHeader{
+        margin: 121px 0 81px 0;
+    }
+    
+    .skill-container{
+        display: flex;
+        flex-direction: row;
+        height: 802px;
+        gap: 20px;
+    }
 
+    .skill-child{
+        text-align: left;
+        justify-content: center;
+    }
+
+    /* time to talk seciton */
+    .timeToTalkSec{
+            align-items: center;
+            width: 100%;
+            gap: 40px;
+        }
+    
+        .talkHeader{
+            font-weight: 900;
+            font-size: 110px;
+            line-height: 162px;
+            max-width: 664px;
+            margin-bottom: 75px;
+        }
     }
   }
