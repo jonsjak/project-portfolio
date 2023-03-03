@@ -7,16 +7,16 @@ body{
     width: 100%;
     margin: 0 auto;
     overflow-x: hidden;
-    display: flex;
+  /*   display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; */
 }
 
 /*Section styling */
 .presentation-container{
- margin-bottom: 98px;
- padding: 0 24px;
+    margin-bottom: 98px;
+    padding: 0 24px;
 }
 
 .presentation {
@@ -53,12 +53,13 @@ body{
 }
 
 .featureSec{
-    background-color: #F5F5F5;
+    background-color:#F5F5F5;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center; 
     padding: 64px 24px;
+    max-width: 100%;
 }
 
 .myWordsSec{
@@ -66,6 +67,7 @@ body{
     display: flex;
     flex-direction: column;
     padding: 64px 24px;
+    width: 100%;
 }
 
 .skillSec{
@@ -139,7 +141,6 @@ color: #0B24F5;
 }
 
 h3{
-    width: 303px;
     height: 43px;
     font-family: 'Satoshi';
     font-style: normal;
@@ -251,10 +252,10 @@ margin-bottom: 18px;
 }
 
 .tags{
-    display: inline;
+    padding: 20px 0 20px 0;
 }
     
-.tags > * {
+.tag1, .tag2 {
 height: 22px;
 font-family: 'Satoshi';
 font-weight: 500;
@@ -334,6 +335,7 @@ margin-top: 20px;
     gap: 21px;
     justify-content: space-around;
     margin-top: 18px;
+    background-color: #FFFFFF;
 }
 
 .article-icon{
@@ -376,6 +378,9 @@ line-height: 32px;
 margin: 18px 0 68px;
 }
 
+.newsTxt{
+    padding-top: 40px;
+}
 
 .skillHeader{
     margin: 64px 0 66px;
@@ -452,16 +457,48 @@ margin-bottom: 103px;
 
     /* Feature section*/
     .featureSec{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
         align-items: flex-start;
     }
+
     .featureHeader{
         width:auto;
+        text-align: left;
     }
 
+    .featureChild{
+        display: flex;
+        flex-direction: row;
+
+    }
+    
+    .placeholderPic{
+        width: 184px;
+        height: 280px;
+        border: 2px solid black;
+    }
+
+    .featureArt{
+        display: inline;
+        width: 500px;
+    }
+
+    .newsTxt{
+        padding-top: 12px;
+    }
+
+   .github-button, .live-demo{
+    display: inline;
+    margin-top: 42px;
+}
+    
     /* My Words section */
     .myWordsSec{
         padding: 120px 89px 149px 89px;
     }
+
 
     /* 
     Set rule for all images
@@ -475,6 +512,11 @@ margin-bottom: 103px;
         margin-bottom: 53px;
     }
 
+    .myWordsImg{
+        width: 564px;
+        height: 340px;
+        border: 3px black solid;
+    }
     /* Skill section */
     .skillSec{
         padding: 121px 0 155px 0;
@@ -534,6 +576,67 @@ margin-bottom: 103px;
 
     .presentation{display: inline-block;}
 
-    
-    
+    /* Tech section*/
+    .techSec{
+        height: 980px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 143px;
+        padding: 0 230px;
+    }
+
+    .featureSec{
+        padding: 120px 0 230px 0;
+    }
+
+    .featureHeader{
+        width: auto;
+    }
+
+    .featureChild{
+        display: grid;
+        grid-template-columns: 280px 500px;
+        justify-content: space-around;
+        width: 820px;
+        height: 280px;
+        border: 3px black dotted;
+    }
+
+    .placeholderPic{
+        border: 4px red solid;
+        width: 280px;
+        height: 280px;
+    }
+
+    .github-button{
+        display: inline;
+    }
+    .live-demo{
+        display: inline;}
+
+        /* My words sectoion */
+    .myWordsSec{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 82px;
+    }
+
+    .myWordsHeader{
+        grid-column: 1 / 3;
+        text-align: left;
+        margin-bottom: 79px;
+    }
+
+    .myWordsImg{
+        width:340px;
+    }
+
+    /* Skills section */
+    .skillSec{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+    }
   }
