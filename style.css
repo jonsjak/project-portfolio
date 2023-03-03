@@ -10,24 +10,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.main-container{
-    width: 100%;
-    overflow-x: hidden;
-    display: flex;
     flex-direction: column;
 }
 
-.main-container > *{
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
 /*Section styling */
-.portfolio-header{
+.presentationSec{
  margin-bottom: 98px;
+ padding: 0 24px;
 }
 
 .presentation {
@@ -55,10 +44,12 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 64px 24px 40px 24px;
+    width: 100%;
 }
 
 .techTxt{
-    margin: 62px 0 120px;
+    margin: 62px 0 24px;
 }
 
 .featureSec{
@@ -67,13 +58,14 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center; 
-    padding-top: 64px;
+    padding: 64px 24px;
 }
 
 .myWordsSec{
     background-color:  #FCEDEA;
     display: flex;
     flex-direction: column;
+    padding: 64px 24px;
 }
 
 .skillSec{
@@ -83,13 +75,15 @@ body{
     align-items: center;
     flex-direction: column;
     text-align: center;
+    width: 100%;
 }
 
-.timeToTalk{
+.timeToTalkSec{
     background-color:  #F5F5F5;
     display: flex;
     flex-direction: column;
-    padding-bottom: 97px;
+    padding: 94px 24px 97px 24px;
+    width: 100%;
 }
 
 .article{
@@ -105,11 +99,7 @@ body{
     margin: 55px auto 29px;   
 }
 
-.profileImage2{
-    margin: 56px 0 29px 0;
-}
-
-.logo{
+.hero{
     display: none;
 }
 
@@ -160,7 +150,7 @@ h3{
    
     }
 
-.skillSec > h5{
+h5{
     height: 32px;
     font-family: 'Satoshi';
     font-style: normal;
@@ -349,20 +339,23 @@ margin-top: 20px;
 
 .codeHead{
 background-color: #EB5577;
+display: inline;
 }
 
 .toolbox{
     background-color:#2483E0;
+    display: inline;
 }
 
 .more{
     background-color: #0B24F5;
-    ;
+    display: inline;
 
 }
 
 .upcoming{
     background-color: #6DB486;
+    display: inline;
 }
 
 ul{
@@ -412,3 +405,103 @@ line-height: 32px;
 color: #000000;
 margin-bottom: 103px;
 }
+
+@media (min-width: 668px) and (max-width: 1024px) {
+    .hero{
+        display: block;
+        width: 100%;
+        height: 412px;
+        margin-bottom: 71px;
+    }
+
+    .presentationSec{
+        padding: 0 102px 0 102px;
+        margin-bottom: 20px;
+    }
+
+    .profileImage{
+        display: inline;
+        margin-bottom: -24px;
+    }
+    .presentation{
+        display: inline-block;
+        padding: 0 0 10px 24px;
+    }
+
+    .presentationTxt{
+        padding-left: 60px;
+        margin-bottom: 62px;
+    }
+
+    .soMe{
+        padding-left: 60px;
+        justify-content: flex-start;
+        gap: 80px;
+    }
+
+    .techSec{
+        height: 800px;
+    }
+
+
+    /* Feature section*/
+    .featureSec{
+        align-items: flex-start;
+    }
+    .featureHeader{
+        width:auto;
+    }
+
+    /* My Words section */
+    .myWordsSec{
+        padding: 120px 89px 149px 89px;
+    }
+
+    /* 
+    Set rule for all images
+    .myWordsSec > img{
+        width: 564px;
+        height: 340px;
+    } */
+
+    .myWordsHeader{
+        text-align: left;
+        margin-bottom: 53px;
+    }
+
+    /* Skill section */
+    .skillSec{
+        padding: 121px 0 155px 0;
+    }
+
+    .skill-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 66px;   
+    }
+
+    .skill-child{
+       text-align: left; 
+    }
+
+    /* Time to talk section */
+    .timeToTalkSec{
+        align-items: center;
+        width: 100%;
+        gap: 40px;
+    }
+
+    .talkHeader{
+        font-weight: 900;
+        font-size: 110px;
+        line-height: 162px;
+        max-width: 664px;
+        margin-bottom: 75px;
+    }
+
+  }
+
+
+  @media (min-width: 1024px){
+
+  }

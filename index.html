@@ -25,33 +25,33 @@
 </head>
 
 <body>
-    <main class="main-container">
-        <header class="portfolio-header">
-            <!-- Logo hidden for starters -->
-            <img class="logo" src="" alt="logo-picture">
-            <!-- Shall I use <picture>? -->
+    
+    <img class="hero" src="/images/hav.jpg" alt="Beach and a fishing boat">
+    <section class="presentationSec">
+        <div class="presentation-container">
             <img class="profileImage" src="images/Portfolio.jpg" alt="portrait of Jonas">
             <div id="presentation" class="presentation">
                 <h1 class="nameHeading">Jonas Jakobson</h1>
                 <h3>Frontend developer</h3>
                 <h4>+ other role</h4>
             </div>
+        </div>
             
-            <div>
-                <p class="presentation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima qui mollitia nisi facere nulla assumenda vitae nesciunt. Magni, mollitia velit culpa voluptas at esse rem fugit dolor iste eos quod illo optio doloremque, non possimus autem quam illum tenetur reprehenderit laboriosam consectetur. Consectetur obcaecati consequatur tempora, quo impedit nesciunt.</p>
-            </div>
-        
-            <div id="soMe" class="soMe">
-                <img src="/images/linkedin.svg" alt="LinkedIn-logo">
-                <img src="images/github.svg" alt="Github-logo">
-                <img src="/images/StackOverflow.svg" alt="Stackoverflow-logo">
-            </div>
-        
-            <div id="letsScroll" class="letsScroll">
-                <img src="/images/downarrow.svg" alt="Arrow down">
-                <p class="scrollTxt">Lets scroll</p>
-            </div>
-        </header>
+        <p class="presentationTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima qui mollitia nisi facere nulla assumenda vitae nesciunt. Magni, mollitia velit culpa voluptas at esse rem fugit dolor iste eos quod illo optio doloremque, non possimus autem quam illum tenetur reprehenderit laboriosam consectetur. Consectetur obcaecati consequatur tempora, quo impedit nesciunt.</p>
+    
+        <div id="soMe" class="soMe">
+            <img src="/images/linkedin.svg" alt="LinkedIn-logo">
+            <img src="images/github.svg" alt="Github-logo">
+            <img src="/images/StackOverflow.svg" alt="Stackoverflow-logo">
+        </div>
+    
+        <div id="letsScroll" class="letsScroll">
+            <img src="/images/downarrow.svg" alt="Arrow down">
+            <p class="scrollTxt">Lets scroll</p>
+        </div>
+    </section>
+
+   
 
         <section id="techSec" class="techSec">
             <h2 class="techHeader">Tech</h2>
@@ -163,48 +163,62 @@
     
         <section id="skillSec"class="skillSec">
             <h2 class="skillHeader">Skills</h2>
-            <h5 class="codeHead">Code</h5>
-                <ul class="codeList">
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Javascript ES6</li>
-                    <li>Styled components</li>
-                    <li>Github</li>
-                </ul>
-            <h5 class="toolbox">Toolbox</h5>
-                <ul class="ToolboxList">
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Javascript ES6</li>
-                    <li>Styled components</li>
-                    <li>Github</li>
-                </ul>
+
+            <div class="skill-container">
+                <div class="skill-child1 skill-child">
+                    <h5 class="codeHead">Code</h5>
+                    <ul class="codeList">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Javascript ES6</li>
+                        <li>Styled components</li>
+                        <li>Github</li>
+                    </ul>
+                </div>
+                <div class="skill-child2 skill-child">
+                    <h5 class="toolbox">Toolbox</h5>
+                    <ul class="ToolboxList">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Javascript ES6</li>
+                        <li>Styled components</li>
+                        <li>Github</li>
+                    </ul>    
+                </div>
+                <div class="skill-child3 skill-child">
+                    <h5 class="more">More</h5>
+                    <ul class="moreList">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Javascript ES6</li>
+                        <li>Styled components</li>
+                        <li>Github</li>
+                    </ul>
+                </div>
+                <div class="skill-child4 skill-child">
+                    <h5 class="upcoming">Upcoming</h5>
+                    <ul class="upcomingList">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Javascript ES6</li>
+                        <li>Styled components</li>
+                        <li>Github</li>
+                    </ul>
+                </div>
             
-            <h5 class="more">More</h5>
-                <ul class="moreList">
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Javascript ES6</li>
-                    <li>Styled components</li>
-                    <li>Github</li>
-                </ul>
-            <h5 class="upcoming">Upcoming</h5>
-                <ul class="upcomingList">
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Javascript ES6</li>
-                    <li>Styled components</li>
-                    <li>Github</li>
-                </ul>
+            </div>
+            
         </section>
     
-        <section id="timeToTalk" class="timeToTalk">
+        <section id="timeToTalkSec" class="timeToTalkSec">
             <h2 class="talkHeader">Time to talk</h2>
-            <img class="profileImage profileImage2" src="images/Portfolio.jpg" alt="portrait of Jonas">
-            <div id="presentation" class="presentation">
-                <h1 class="nameHeading">Jonas Jakobson</h1>
-                <h3>Frontend developer</h3>
-                <h4>+ other role</h4>
+            <div class="presentation-container">
+                <img class="profileImage" src="images/Portfolio.jpg" alt="portrait of Jonas">
+                <div id="presentation" class="presentation">
+                    <h1 class="nameHeading">Jonas Jakobson</h1>
+                    <h3>Frontend developer</h3>
+                    <h4>+ other role</h4>
+                </div>
             </div>
     
             <h4 class="phone">+46(0)707 48 32 61</h4>
@@ -215,9 +229,5 @@
                 <img src="/images/StackOverflow.svg" alt="Stackoverflow-logo">
             </div>
         </section>
-        
-    </main>
-
-
 </body>
 </html>
