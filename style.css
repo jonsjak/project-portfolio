@@ -32,7 +32,9 @@ body{
 
 .soMe{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    margin-top: 62px;
+    gap: 42px;
 }
 
 .letsScroll{
@@ -73,8 +75,11 @@ body{
     background-color:  #FCEDEA;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 64px 24px;
     width: 100%;
+
 }
 
 .skillSec{
@@ -97,6 +102,13 @@ body{
 
 .article{
     margin-bottom: 98px;
+    width: 340px;git
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 /*Single elements*/
@@ -424,7 +436,7 @@ margin-bottom: 103px;
 }
 
 .presentationTxt{
-    margin: 52px 0;
+    margin: 52px 40px;
 }
 
 @media (min-width: 668px) and (max-width: 1024px) {
@@ -447,8 +459,6 @@ margin-bottom: 103px;
     }
 
     .soMe{
-        padding-left: 60px;
-        justify-content: flex-start;
         gap: 80px;
     }
 
@@ -483,18 +493,23 @@ margin-bottom: 103px;
     }
 
     .featureArt{
-        display: inline;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         width: 500px;
+        height: 280px;
     }
 
     .newsTxt{
         padding-top: 12px;
     }
 
-   .github-button, .live-demo{
-    display: inline;
-    margin-top: 42px;
-}
+    .button-container{
+        display: flex;
+        flex-direction: row-reverse;
+       justify-content: flex-end;
+        gap: 24px;
+    }
     
     /* My Words section */
     .myWordsSec{
@@ -593,6 +608,14 @@ margin-bottom: 103px;
         width: auto;
     }
 
+    .featureArt{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 500px;
+        height: 280px;
+    }
+
     .featureChild{
         display: grid;
         grid-template-columns: 280px 500px;
@@ -627,13 +650,8 @@ margin-bottom: 103px;
         margin-bottom: 79px;
     }
 
-    .myWordsImg{
-        width:564px;
-    }
-
     .article{
-
-        width: 564px;
+        max-width: 540px;
     }
 
     /* Skills section */
@@ -648,7 +666,7 @@ margin-bottom: 103px;
     .skill-container{
         display: flex;
         flex-direction: row;
-        gap: 173px;
+        gap: 66px;
     }
 
     .skill-child{
