@@ -20,7 +20,14 @@ body{
 }
 
 .presentation {
-    margin-bottom: 52px;
+    /* margin-bottom: 52px; */
+}
+
+.personalInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    margin-top: 55px;
 }
 
 .soMe{
@@ -97,8 +104,7 @@ body{
     width: 164px;
     height: 164px;
     border-radius: 50%;
-    display: block;
-    margin: 55px auto 29px;   
+    margin: auto;
 }
 
 .hero{
@@ -418,7 +424,7 @@ margin-bottom: 103px;
 }
 
 .presentationTxt{
-    margin-bottom: 52px;
+    margin: 52px 0;
 }
 
 @media (min-width: 668px) and (max-width: 1024px) {
@@ -429,23 +435,15 @@ margin-bottom: 103px;
         margin-bottom: 71px;
     }
 
-    .presentation-container{
-        padding: 0 102px 0 102px;
-        margin-bottom: 20px;
+    .personalInfo{
+        flex-direction: row;
+        margin-bottom: 32px;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     .profileImage{
-        display: inline;
-        margin-bottom: -24px;
-    }
-    .presentation{
-        display: inline-block;
-        padding: 0 0 10px 24px;
-    }
-
-    .presentationTxt{
-        padding-left: 60px;
-        margin-bottom: 62px;
+        margin: 0;
     }
 
     .soMe{
@@ -526,7 +524,7 @@ margin-bottom: 103px;
     .skill-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 66px;   
+        gap: 66px; 
     }
 
     .skill-child{
@@ -556,6 +554,7 @@ margin-bottom: 103px;
     .presentationSec{
         display: flex;
         flex-direction: row-reverse;
+        align-items: center;
 
     }
     .hero{
@@ -564,18 +563,16 @@ margin-bottom: 103px;
         height: 980px;
     }
 
-    .presentation-container{
-        width: 50%;
-        display: inline;
-        padding-top: 252px;        ;
+    .personalInfo{
+        flex-direction: row;
+        margin-bottom: 32px;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     .profileImage{
-        display: inline-block;
-        margin: 0 50px -20px 0;
+        margin: 0;
     }
-
-    .presentation{display: inline-block;}
 
     /* Tech section*/
     .techSec{
@@ -640,6 +637,10 @@ margin-bottom: 103px;
     }
 
     /* Skills section */
+    .skillSec{
+        height: 802px;
+    }
+    
     .skillHeader{
         margin: 121px 0 81px 0;
     }
@@ -647,8 +648,7 @@ margin-bottom: 103px;
     .skill-container{
         display: flex;
         flex-direction: row;
-        height: 802px;
-        gap: 20px;
+        gap: 173px;
     }
 
     .skill-child{
@@ -670,5 +670,7 @@ margin-bottom: 103px;
             max-width: 664px;
             margin-bottom: 75px;
         }
+      
     }
-  }
+  
+
