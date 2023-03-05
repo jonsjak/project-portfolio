@@ -270,6 +270,7 @@ padding: 4px;
     justify-content: center;
     background-color: #F5F5F5;
     text-decoration: none;
+    gap: 21px;
 }
 
 .github-button:hover{
@@ -321,14 +322,6 @@ padding: 4px;
     margin: 0 15px 0 0;
 }
 
-.github{
-    width: 32px;
-    height: 32px;
-    margin: 0 15px 0 0;
-}
-
-
-
 .article-button{
     display: flex;
     flex-direction: row;
@@ -339,17 +332,18 @@ padding: 4px;
     font-weight: 500;
     font-size: 20px;
     line-height: 27px;
+    font-family: 'Satoshi';
     color: #333333;
     gap: 21px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 18px;
     background-color: #FFFFFF;
+    text-decoration: none;
 }
 
-.article-icon{
-    width: 20px;
-    height: 26px;
-    margin-left: 4px;
+.article-button:hover{
+    background-color: #FFD338;
+    ;
 }
 
 
@@ -619,12 +613,6 @@ margin-bottom: 103px;
         width: 280px;
         height: 280px;
     }
-
-    .github-button{
-        display: inline;
-    }
-    .live-demo{
-        display: inline;}
 
         /* My words section */
     .myWordsSec{
