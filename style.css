@@ -11,15 +11,14 @@ body{
 
 /*Section and div styling */
 .presentation-container{
-    margin-bottom: 98px;
-    padding: 0 24px;
+    margin-bottom: 120px;
 }
 
 .personalInfo{
     display: flex;
     flex-direction: column;
     gap: 29px;
-    margin-top: 55px;
+    margin: 55px 0 0 24px;
 }
 
 .soMe{
@@ -30,13 +29,36 @@ body{
 }
 
 .letsScroll{
-    margin-top: 72px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    outline: none;
+    position: fixed;
+    z-index:999;
+    top: 80%;
+    left: 47.5%;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;   
+    gap: 32px;
+    animation: jump 1s infinite;
 }
+
+@keyframes jump {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, -60%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+
 
 .techSec{
     background-color:  #EDFFFF;
@@ -178,6 +200,9 @@ p{
     margin: auto;
 }
 
+.profileImage2{
+    margin: 0;
+}
 
 .arrow{
 width: 19px;
@@ -370,14 +395,13 @@ display: inline;
 
 ul{
     width: 168px;
-height: 192px;
-
-font-family: 'EB Garamond';
-font-style: normal;
-font-weight: 400;
-font-size: 22px;
-line-height: 32px;
-margin: 18px 0 68px;
+    height: 192px;
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    margin: 18px 0 68px;
 }
 
 .newsTxt{
@@ -398,30 +422,34 @@ margin: 64px 0 0 0;
 }
 
 .phone{
-height: 32px;
-left: 24px;
-top: 560px;
+font-family: 'Satoshi';
+font-style: normal;
 font-weight: 900;
 font-size: 24px;
 line-height: 32px;
-
+text-decoration: none;
 color: #000000;
 }
 
 .mail{
 height: 32px;
-left: 24px;
-top: 603px;
 font-weight: 900;
 font-size: 24px;
-line-height: 32px;
 color: #000000;
 margin-bottom: 103px;
+text-decoration: none;
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 900;
 }
 
 .presentationTxt{
-    margin: 52px 40px;
+    margin: 52px 40px 0 64px;
 }
+
+/* .highlight{
+    background-color: #EB5577;   Fix later!
+} */
 
 @media (min-width: 668px) and (max-width: 1024px) {
     .hero{
