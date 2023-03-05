@@ -35,7 +35,7 @@ body{
     outline: none;
     position: fixed;
     z-index:999;
-    top: 80%;
+    top: 75%;
     left: 47.5%;
     text-align: center;
     display: flex;
@@ -573,6 +573,9 @@ font-weight: 900;
         margin-bottom: 75px;
     }
 
+    .address{
+       text-align: center;
+    }
   }
 
 
@@ -693,6 +696,10 @@ font-weight: 900;
             line-height: 162px;
             max-width: 664px;
             margin-bottom: 75px;
+        }
+
+        .address{
+            text-align: center;
         }
       
     }
