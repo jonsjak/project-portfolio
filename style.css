@@ -228,10 +228,6 @@ top: 67px;
     border-bottom: 3px solid #0B24F5;
 }
 
-.techHeader{
-
-}
-
 .featureHeader{
 font-weight: 700;
 font-size: 72px;
@@ -591,6 +587,10 @@ font-weight: 900;
         display: inline-block;
         width: 50%;
         height: 980px;
+    }
+
+    .presentation-container{
+        max-width: 50%;
     }
 
     .personalInfo{
