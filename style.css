@@ -34,8 +34,15 @@ body{
     padding: 0;
     outline: none;
     position: fixed;
+    font-family: 'Satoshi';
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 22px;
+    color:#0B24F5;
+    width: 78px;
+    border-bottom: 3px solid #0B24F5;
     z-index:999;
-    top: 75%;
+    top: 80%;
     left: 47.5%;
     text-align: center;
     display: flex;
@@ -228,13 +235,7 @@ top: 67px;
 
 
 .scrollTxt{
-    font-family: 'Satoshi';
-    font-weight: 900;
-    font-size: 16px;
-    line-height: 22px;
-    color:#0B24F5;
-    width: 78px;
-    border-bottom: 3px solid #0B24F5;
+    
 }
 
 .featureHeader{
@@ -387,10 +388,6 @@ ul{
     margin: 18px 0 68px;
 }
 
-.newsTxt{
-    padding-top: 40px;
-}
-
 .skillHeader{
     margin: 64px 0 66px;
 }
@@ -429,10 +426,6 @@ font-weight: 900;
 .presentationTxt{
     margin: 52px 40px 0 64px;
 }
-
-/* .highlight{
-    background-color: #EB5577;   Fix later!
-} */
 
 @media (min-width: 668px) and (max-width: 1024px) {
     .hero{
