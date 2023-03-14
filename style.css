@@ -11,19 +11,20 @@ body{
 
 /*Section and div styling */
 .presentation-container{
-    margin-bottom: 120px;
+    margin-bottom: 56px;
 }
 
+/* Personal info needs to be styled further */
 .personalInfo{
     display: flex;
     flex-direction: column;
     gap: 29px;
-    margin: 55px 0 0 24px;
+    margin-top: 56px;
 }
 
 .soMe{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     margin-top: 62px;
     gap: 42px;
 }
@@ -43,7 +44,7 @@ body{
     border-bottom: 3px solid #0B24F5;
     z-index:999;
     top: 80%;
-    left: 47.5%;
+    left: 50%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -90,6 +91,7 @@ body{
     align-items: center; 
     padding: 64px 24px;
     max-width: 100%;
+    gap: 80px;
 }
 
 .myWordsSec{
@@ -229,13 +231,9 @@ left: 78px;
 top: 67px;
 }
 
-.placeholderPic{
+.feature-pic{
     margin-bottom: 24px;
-}
-
-
-.scrollTxt{
-    
+    width: 100%;
 }
 
 .featureHeader{
@@ -266,8 +264,8 @@ text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 30px;
-    margin-bottom: 80px;
+    gap: 24px;
+    
 }
 
 /* tag styling */
@@ -395,10 +393,9 @@ ul{
 .talkHeader{
 height: 78px;
 font-weight: 900;
-font-size: 58px;
+font-size: 57px;
 line-height: 78px;
 color: #EB5577;
-margin: 64px 0 0 0;
 }
 
 .phone{
@@ -461,6 +458,7 @@ font-weight: 900;
         flex-direction: column;
         justify-content: left;
         align-items: flex-start;
+        gap: 80px;
     }
 
     .featureHeader{
@@ -474,22 +472,18 @@ font-weight: 900;
 
     }
     
-    .placeholderPic{
+    .feature-pic{
         width: 184px;
         height: 280px;
-        border: 2px solid black;
+        object-fit: cover;
     }
 
     .featureArt{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 500px;
         height: 280px;
-    }
-
-    .newsTxt{
-        padding-top: 12px;
     }
 
     .button-container{
@@ -500,18 +494,17 @@ font-weight: 900;
     }
     
     /* My Words section */
-    .myWordsSec{
-        padding: 120px 89px 149px 89px;
-    }
 
     .article{
         width: 564px;
     }
 
-
     .myWordsHeader{
-        text-align: left;
         margin-bottom: 53px;
+    }
+    
+    .newsHeader{
+        margin-bottom: 24px;
     }
 
     .myWordsImg{
@@ -551,6 +544,10 @@ font-weight: 900;
 
     .address{
        text-align: center;
+    }
+
+    .soMe{
+        margin-top: 135px;
     }
   }
 
@@ -619,8 +616,7 @@ font-weight: 900;
         height: 280px;
     }
 
-    .placeholderPic{
-        border: 2px black dotted;
+    .feature-pic{
         width: 280px;
         height: 280px;
     }
@@ -629,8 +625,8 @@ font-weight: 900;
     .myWordsSec{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding: 120px 143px 0 143px;
-        gap: 32px;
+        padding: 120px 86px 0 86px;
+        grid-column-gap: 32px;
     }
 
     .myWordsHeader{
@@ -639,8 +635,14 @@ font-weight: 900;
         margin-bottom: 79px;
     }
 
+    .myWordsImg{
+        width: 540px;
+        height: 340px;
+        border: 2px dotted black;
+    }
+
     .article{
-        max-width: 540px;
+        width: 540px;
     }
 
     /* Skills section */
