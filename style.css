@@ -11,7 +11,7 @@ body{
 
 /*Section and div styling */
 .presentation-container{
-    margin-bottom: 56px;
+    margin: 56px 24px 0;
 }
 
 /* Personal info needs to be styled further */
@@ -25,7 +25,7 @@ body{
 .soMe{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 62px;
+    margin: 99px;
     gap: 42px;
 }
 
@@ -421,7 +421,11 @@ font-weight: 900;
 }
 
 .presentationTxt{
-    margin: 52px 40px 0 64px;
+    margin: 52px 0 64px 0;
+}
+
+.address{
+    margin-top: 56px;
 }
 
 @media (min-width: 668px) and (max-width: 1024px) {
@@ -437,6 +441,13 @@ font-weight: 900;
         margin-bottom: 32px;
         justify-content: flex-start;
         align-items: center;
+    }
+    
+    .presentation-container{
+        margin: 0 102px;
+    }
+    .presentationTxt{
+        margin: 0 40px; 
     }
 
     .profileImage{
@@ -500,6 +511,7 @@ font-weight: 900;
     }
 
     .myWordsHeader{
+        grid-column: 1 / span 2;
         margin-bottom: 53px;
     }
     
@@ -622,17 +634,11 @@ font-weight: 900;
     }
 
         /* My words section */
-    .myWordsSec{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        padding: 120px 86px 0 86px;
-        grid-column-gap: 32px;
-    }
-
-    .myWordsHeader{
-        grid-column: 1 / 3;
-        text-align: left;
-        margin-bottom: 79px;
+    .article-container{
+        display: flex;
+        flex-direction: row;
+        margin-top: 79px;
+        gap: 30px;
     }
 
     .myWordsImg{
