@@ -7,6 +7,8 @@ body{
     width: 100%;
     margin: 0 auto;
     overflow-x: hidden;
+    font-family: 'Satoshi', sans-serif;
+    color: #0B24F5;
 }
 
 /*Text-styling */
@@ -15,11 +17,7 @@ p{
     font-weight: 400;
     font-size: 22px;
     line-height: 28.71px;
-}
-
-h1, h2, h3, h4, h5{
-    font-family: 'Satoshi', sans-serif;
-    color: #0B24F5;   
+    color: #000000;
 }
 
 h1{
@@ -27,28 +25,27 @@ h1{
     font-weight: 700;
     font-size: 28px;
     line-height: 38px;
-    }
-
-h2{
-    height: 108px;
-    font-weight: 700;
-    font-size: 80px;
-    line-height: 108px;
 }
 
-h3{
+h2{
     font-weight: 900;
     font-size: 32px;
     line-height: 43px;
     color: #000000;
-   
-    }
-
-h4{
+}
+    
+h3{
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
     color: #565656;
+}
+
+h4{
+    height: 108px;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 108px;
 }
 
 h5{
@@ -151,7 +148,7 @@ display: inline;
     gap: 29px;
 }
 
-.soMe-links{
+.soMe{
     display: flex;
     justify-content: space-evenly;
     margin: 48px 0 247px 0;
