@@ -9,136 +9,17 @@ body{
     overflow-x: hidden;
 }
 
-/*Section and div styling */
-.presentation-container{
-    margin: 56px 24px 0;
+/*Text-styling */
+p{
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28.71px;
 }
 
-/* Personal info needs to be styled further */
-.personalInfo{
-    display: flex;
-    flex-direction: column;
-    gap: 29px;
-    margin-top: 56px;
-}
-
-.soMe{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 99px;
-    gap: 42px;
-}
-
-.letsScroll{
-    border: none;
-    background-color: transparent;
-    padding: 0;
-    outline: none;
-    position: fixed;
-    font-family: 'Satoshi';
-    font-weight: 900;
-    font-size: 16px;
-    line-height: 22px;
-    color:#0B24F5;
-    width: 78px;
-    border-bottom: 3px solid #0B24F5;
-    z-index:999;
-    top: 80%;
-    left: 50%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-    animation: jump 1s infinite;
-}
-
-@keyframes jump {
-  0% {
-    transform: translate(-50%, -50%);
-  }
-  50% {
-    transform: translate(-50%, -60%);
-  }
-  100% {
-    transform: translate(-50%, -50%);
-  }
-}
-
-
-
-.techSec{
-    background-color:  #EDFFFF;
-    padding-top: 80px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 64px 24px 40px 24px;
-    width: 100%;
-}
-
-.techTxt{
-    margin: 62px 0 24px;
-}
-
-.featureSec{
-    
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center; 
-    padding: 64px 24px;
-    max-width: 100%;
-    gap: 80px;
-}
-
-.myWordsSec{
-    background-color:  #FCEDEA;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 64px 24px;
-    width: 100%;
-
-}
-
-.skillSec{
-    background-color:  #FDF2E4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-}
-
-.timeToTalkSec{
-    background-color:  #F5F5F5;
-    display: flex;
-    flex-direction: column;
-    padding: 94px 24px 97px 24px;
-    width: 100%;
-}
-
-.article{
-    margin-bottom: 98px;
-    width: 340px;
-}
-
-.button-container{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-/*Headings*/
 h1, h2, h3, h4, h5{
     font-family: 'Satoshi', sans-serif;
-    color: #0B24F5;
-    
+    color: #0B24F5;   
 }
 
 h1{
@@ -200,17 +81,61 @@ display: inline;
     display: inline;
 }
 
-p{
-    font-family: 'EB Garamond', serif;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 28.71px;
+/* Scroll-button */
+.arrow{
+    width: 19px;
+    height: 30px;
+    left: 78px;
+    top: 67px;
+    }
+
+.letsScroll{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    outline: none;
+    position: fixed;
+    font-family: 'Satoshi';
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 22px;
+    color:#0B24F5;
+    width: 78px;
+    border-bottom: 3px solid #0B24F5;
+    z-index:999;
+    bottom: 0vh;
+    left: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    animation: jump 1s infinite;
 }
 
-/*Single elements*/
+@keyframes jump {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, -60%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+/****MOBILE FIRST STYLING*****/
+
+/*Presentation section*/
 .hero{
     display: none;
     filter: grayscale(100%);
+}
+
+.presentation-container{
+    margin: 56px 24px 0;
 }
 
 .profileImage{
@@ -220,28 +145,92 @@ p{
     margin: auto;
 }
 
-.profileImage2{
-    margin: 0;
+.personalInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
 }
 
-.arrow{
-width: 19px;
-height: 30px;
-left: 78px;
-top: 67px;
+.soMe-links{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 48px 0 247px 0;
+    gap: 42px;
 }
 
-.feature-pic{
-    margin-bottom: 24px;
+/* Tech section styling */
+.techSec{
+    background-color:  #EDFFFF;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 24px 120px 24px;
     width: 100%;
+    gap: 62px;
+}
+
+/* Feature section styling */
+.featureSec{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+    padding: 64px 24px;
+    max-width: 100%;
+    gap: 80px;
+}
+
+.featureChild{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px; 
 }
 
 .featureHeader{
-font-weight: 700;
-font-size: 72px;
-line-height: 80px;
-margin-bottom: 64px;
-text-align: left;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 80px;
+    margin-bottom: 64px;
+    text-align: left;
+    }
+    
+.feature-pic{
+    width: 100%;
+}
+
+.tags{
+    padding: 20px 0 20px 0;
+}
+    
+.tag1, .tag2 {
+height: 22px;
+font-family: 'Satoshi';
+font-weight: 500;
+font-size: 16px;
+color: #FFFFFF;
+background-color: #000000;
+display: inline;
+padding: 4px;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* My Words section styling */
+.myWordsSec{
+    background-color:  #FCEDEA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 24px;
+    width: 100%;
 }
 
 .myWordsHeader{
@@ -260,29 +249,95 @@ text-align: left;
     margin-bottom: 18px;
     }
 
-.featureChild{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 24px;
-    
+.myWordsImg{
+    width: 327px;
 }
 
-/* tag styling */
-.tags{
-    padding: 20px 0 20px 0;
+.article{
+    margin-bottom: 98px;
+    width: 340px;
 }
+
+/* Skill section styling */
+.skillSec{
+    background-color:  #FDF2E4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.skillHeader{
+    margin: 64px 0 66px;
+}
+
+ul{
+    width: 168px;
+    height: 192px;
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    margin: 18px 0 68px;
+}
+
+/* Time to Talk section styling */
+.timeToTalkSec{
+    background-color:  #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    padding: 94px 24px 97px 24px;
+    width: 100%;
+}
+
+.talkHeader{
+    height: 78px;
+    font-weight: 900;
+    font-size: 57px;
+    line-height: 78px;
+    color: #EB5577;
+    }
+
+.personalInfo2{
+    margin-top: 56px;
+}
+
+.profileImage2{
+    margin: 0;
+}
+
+.phone{
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    text-decoration: none;
+    color: #000000;
+    }
     
-.tag1, .tag2 {
-height: 22px;
-font-family: 'Satoshi';
-font-weight: 500;
-font-size: 16px;
-color: #FFFFFF;
-background-color: #000000;
-display: inline;
-padding: 4px;
-}
+    .mail{
+    height: 32px;
+    font-weight: 900;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 103px;
+    text-decoration: none;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 900;
+    }
+
+    .presentationTxt{
+        margin: 52px 0 64px 0;
+    }
+    
+    .address{
+        margin-top: 56px;
+    }
 
 /*Button styling default and hover*/
 .github-button{
@@ -372,61 +427,9 @@ padding: 4px;
 
 .article-button:hover{
     background-color: #FFD338;
-    ;
 }
 
-ul{
-    width: 168px;
-    height: 192px;
-    font-family: 'EB Garamond';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 32px;
-    margin: 18px 0 68px;
-}
-
-.skillHeader{
-    margin: 64px 0 66px;
-}
-
-.talkHeader{
-height: 78px;
-font-weight: 900;
-font-size: 57px;
-line-height: 78px;
-color: #EB5577;
-}
-
-.phone{
-font-family: 'Satoshi';
-font-style: normal;
-font-weight: 900;
-font-size: 24px;
-line-height: 32px;
-text-decoration: none;
-color: #000000;
-}
-
-.mail{
-height: 32px;
-font-weight: 900;
-font-size: 24px;
-color: #000000;
-margin-bottom: 103px;
-text-decoration: none;
-font-family: 'Satoshi';
-font-style: normal;
-font-weight: 900;
-}
-
-.presentationTxt{
-    margin: 52px 0 64px 0;
-}
-
-.address{
-    margin-top: 56px;
-}
+/*****Tablet styling *****/
 
 @media (min-width: 668px) and (max-width: 1024px) {
     .hero{
@@ -454,7 +457,7 @@ font-weight: 900;
         margin: 0;
     }
 
-    .soMe{
+    .soMe-links{
         gap: 80px;
     }
 
@@ -522,7 +525,6 @@ font-weight: 900;
     .myWordsImg{
         width: 564px;
         height: 340px;
-        border: 3px black solid;
     }
     /* Skill section */
     .skillSec{
@@ -558,11 +560,12 @@ font-weight: 900;
        text-align: center;
     }
 
-    .soMe{
+    .soMe-links{
         margin-top: 135px;
     }
   }
 
+/****Desktop styling *****/
 
   @media (min-width: 1024px){
     /* header and presentation */
@@ -644,7 +647,6 @@ font-weight: 900;
     .myWordsImg{
         width: 540px;
         height: 340px;
-        border: 2px dotted black;
     }
 
     .article{
