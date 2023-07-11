@@ -86,7 +86,7 @@ display: inline;
     top: 67px;
     }
 
-.letsScroll{
+.scroll-button{
     border: none;
     background-color: transparent;
     padding: 0;
@@ -121,6 +121,10 @@ display: inline;
   100% {
     transform: translate(-50%, -50%);
   }
+}
+
+.scroll-button:hover {
+ /* Add styling */
 }
 
 /****MOBILE FIRST STYLING*****/
@@ -196,6 +200,7 @@ display: inline;
     
 .feature-pic{
     width: 100%;
+    height: 100%;
 }
 
 .tags{

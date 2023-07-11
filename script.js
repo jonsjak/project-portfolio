@@ -1,4 +1,4 @@
-const scrollArrow = document.getElementById("letsScroll")
+const scrollArrow = document.getElementById("scroll-button")
 
 scrollArrow.addEventListener('click', () => {
     console.log("scrolling enabled");
