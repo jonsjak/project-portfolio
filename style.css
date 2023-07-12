@@ -198,7 +198,14 @@ display: inline;
     text-align: left;
     }
     
-.feature-pic{
+.image-container{
+    width: 327px;
+    height: 280px;
+    overflow: hidden;
+}
+
+.feature-pic {
+    object-fit: cover;
     width: 100%;
     height: 100%;
 }
@@ -488,10 +495,9 @@ ul{
 
     }
     
-    .feature-pic{
+    .image-container{
         width: 184px;
         height: 280px;
-        object-fit: cover;
     }
 
     .featureArt{
@@ -633,7 +639,7 @@ ul{
         height: 280px;
     }
 
-    .feature-pic{
+    .image-container {
         width: 280px;
         height: 280px;
     }
