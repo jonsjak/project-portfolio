@@ -7,7 +7,7 @@ const featureDataList = [
         altText: "movieglobe pic",
         title: "The Movie Location Globe",
         description: "Final project at Technigo. An interactive movie map for finding new movies and travel inspiration.",
-        featureTags:  ["HTML5", "CSS"],
+        featureTags:  ["HTML5", "CSS", "React", "Redux"],
         githubLink: "https://github.com/jonsjak/finalproject-front-jonas-vera",
         deployLink: "https://movie-globe.netlify.app/"
     },

@@ -6,27 +6,27 @@ const featureDataList = [
         altText: "movieglobe pic",
         title: "The Movie Location Globe",
         description: "Final project at Technigo. An interactive movie map for finding new movies and travel inspiration.",
-        featureTags:  ["HTML5", "CSS"],
+        featureTags:  ["HTML5", "CSS", "React", "Redux", "Access Token", "Styled Components"],
         githubLink: "https://github.com/jonsjak/finalproject-front-jonas-vera",
         deployLink: "https://movie-globe.netlify.app/"
     },
     {
         featureNo: 2,
         imageSrc: "./images/happy-thoughts.png",
-        altText: "chatbot píc",
+        altText: "chatbot pic",
         title: "Happy Thoughts!",
         description: "Twitterish message app for posting and liking happy thoughts to an API",
-        featureTags: ["HTML5", "CSS", "JavaScript"],
+        featureTags: ["HTML5", "CSS", "React", "REST API"],
         githubLink: "https://github.com/jonsjak/project-happy-thoughts",
         deployLink: "https://eloquent-bunny-a273b7.netlify.app/"
     },
     {
         featureNo: 3,
         imageSrc: "./images/todo-app.png",
-        altText: "chatbot píc",
+        altText: "Todo app",
         title: "Childish to-do-app",
         description: "A playful app for creating a task list, which uses Redux to keep track of state and pass tasks between unfinished and finished tasks.",
-        featureTags: ["HTML5", "CSS", "JavaScript", "Redux"],
+        featureTags: ["HTML5", "CSS", "React", "Redux"],
         githubLink: "https://github.com/jonsjak/project-todos/tree/master",
         deployLink: "https://jonastodoapp.netlify.app/"
     },
@@ -36,27 +36,27 @@ const featureDataList = [
         altText: "space maze starter page",
         title: "The Space Maze",
         description: "An animated game set in a fantastic space environment.",
-        featureTags: ["HTML5", "CSS", "JavaScript"],
+        featureTags: ["HTML5", "CSS", "React", "Redux"],
         githubLink: "https://github.com/Technigo/project-labyrinth/pull/194",
         deployLink: "https://the-great-space-maze.netlify.app/"
     },
     {
         featureNo: 5,
         imageSrc: "./images/zombie-quiz.png",
-        altText: "chatbot píc",
+        altText: "Zombie game pic",
         title: "Zombie Quiz Game",
         description: "Do you dare playing this post-apocalyptic Zombie game?",
-        featureTags: ["HTML5", "CSS", "JavaScript"],
+        featureTags: ["HTML5", "CSS", "React"],
         githubLink: "https://github.com/jonsjak/project-redux-quiz",
         deployLink: "https://cute-pasca-d39626.netlify.app/"
     },
     {
         featureNo: 6,
         imageSrc: "./images/chatbot.jpg",
-        altText: "chatbot píc",
-        title: "Chatbot built in Javascript",
-        description: "Description of project. e praesentium consequatur sed doloremque labore vero voluptatius porro quod illum?",
-        featureTags: ["HTML5", "CSS", "JavaScript"],
+        altText: "chatbot pic",
+        title: "Quiz Bot built in Javascript",
+        description: "A Chat Bot letting you take a Sweden Trivia Quiz",
+        featureTags: ["HTML5", "CSS", "Vanilla.js"],
         githubLink: "https://github.com/jonsjak/project-chatbot/commit/03caaf6153a20646dfb6d0eda11ff2fcb41ab94d",
         deployLink: "https://prismatic-cajeta-1efba0.netlify.app"
     },
@@ -65,8 +65,8 @@ const featureDataList = [
         imageSrc: "./images/weather-app.jpg",
         altText: "Weather App",
         title: "Weather App using API fetch",
-        description: "Description of project. e praesentium consequatur sed doloremque labore vero voluptatius porro quod illum?",
-        featureTags: ["HTML5", "CSS", "JavaScript"],
+        description: "App fetching weather data, altering imagery and textual content based on the forecast data",
+        featureTags: ["HTML5", "CSS", "Vanilla.js", "API"],
         githubLink: "https://github.com/Technigo/project-weather-app/pull/265",
         deployLink: "https://cheery-pasca-c07ee4.netlify.app/"
     },
@@ -75,8 +75,8 @@ const featureDataList = [
         imageSrc: "./images/music-releases.jpg",
         altText: "Music release site",
         title: "Music release app built in React",
-        description: "Description of project. e praesentium consequatur sed doloremque labore vero voluptatius porro quod illum?",
-        featureTags: ["HTML5", "CSS", "React"],
+        description: "React single page application, fetching music releases from an API and using routes for maneuvering.",
+        featureTags: ["HTML5", "CSS", "React", "SPA", "API"],
         githubLink: "https://github.com/Technigo/project-music-releases/pull/254",
         deployLink: "https://moonlit-paprenjak-b2f391.netlify.app/"
     },
@@ -85,7 +85,7 @@ const featureDataList = [
         imageSrc: "./images/ancient-times.jpg",
         altText: "Ancient Times News site",
         title: "The Ancient Times News Site",
-        description: "Description of project. e praesentium consequatur sed doloremque labore vero voluptatius porro quod illum?",
+        description: "Where it all started. A thematic news site landing page set in ancient times",
         featureTags: ["HTML5", "CSS"],
         githubLink: "https://github.com/jonsjak/project-news-site",
         deployLink: "https://the-ancient-times-news-site.netlify.app/"
@@ -114,7 +114,7 @@ const toolboxSkills = [
     const articleContainer = document.getElementById("articleContainer");
 
     featureDataList.forEach((feature) => {
-        const featureArticle = document.createElement('featureArticle');
+        const featureArticle = document.createElement("article");
         featureArticle.className = "featureChild";
         
         //gets all tags for each article
@@ -122,27 +122,25 @@ const toolboxSkills = [
 
         // Populates the innerHTML of featureArticle
         featureArticle.innerHTML = `
-            <article class="featureChild">
-                <div class="image-container">
-                    <img class="feature-pic" src="${feature.imageSrc}" alt="${feature.altText}">
+            <div class="image-container">
+                <img class="feature-pic" src="${feature.imageSrc}" alt="${feature.altText}">
+            </div>
+            <div class="featureArt">
+                <h2 class="newsHeader">${feature.title}</h2>
+                <p class="newsTxt">${feature.description}</p>
+                <div class="tags">
+                    ${techTags}
                 </div>
-                <div class="featureArt">
-                    <h2 class="newsHeader">${feature.title}</h2>
-                    <p class="newsTxt">${feature.description}</p>
-                    <div class="tags">
-                        ${techTags}
-                    </div>
 
-                    <div class="button-container">
-                        <a class="github-button" href="${feature.githubLink}">
-                            <img class="github" src="/images/github-big-black.svg" alt="github logo">View the code 
-                        </a>
-                        <a class="live-demo" href="${feature.deployLink}" target="_blank">
-                            <img class="globe-icon" src="/images/globe-big-black.svg" alt="globe logo">Live demo
-                        </a>
-                    </div>                
-                </div>
-            </article> 
+                <div class="button-container">
+                    <a class="github-button" href="${feature.githubLink}">
+                        <img class="github" src="/images/github-big-black.svg" alt="github logo">View the code 
+                    </a>
+                    <a class="live-demo" href="${feature.deployLink}" target="_blank">
+                        <img class="globe-icon" src="/images/globe-big-black.svg" alt="globe logo">Live demo
+                    </a>
+                </div>                
+            </div> 
         `;
 
         // Append featureArticle to the articleContainer

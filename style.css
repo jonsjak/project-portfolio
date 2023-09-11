@@ -187,13 +187,13 @@ display: inline;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 24px; 
+    gap: 24px;
+    margin-bottom: 80px;
 }
 
 .featureHeader{
     font-weight: 700;
     font-size: 72px;
-    line-height: 80px;
     margin-bottom: 64px;
     text-align: left;
     }
@@ -483,10 +483,11 @@ ul{
         align-items: flex-start;
         gap: 80px;
     }
-
+    /* needs to fix feature styling gaps */
     .featureHeader{
         width:auto;
         text-align: left;
+        margin-bottom: 40px;
     }
 
     .featureChild{
@@ -626,7 +627,7 @@ ul{
     .featureArt{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 500px;
         height: 280px;
     }
@@ -637,6 +638,14 @@ ul{
         justify-content: space-around;
         width: 820px;
         height: 280px;
+        margin-bottom: 120px;
+    }
+
+    .button-container{
+        display: flex;
+        flex-direction: row-reverse;
+       justify-content: flex-end;
+        gap: 24px;
     }
 
     .image-container {
