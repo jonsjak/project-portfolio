@@ -102,7 +102,7 @@ const moreSkills = [
 ];
 
 const upcomingSkills = [
-  "TypeScript", "Kubernetes and/or Docker"
+  "TypeScript", "SAAS", "Kubernetes and/or Docker"
 ];
 
 const toolboxSkills = [
